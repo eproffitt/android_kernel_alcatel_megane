@@ -4,7 +4,7 @@ kernel
 
 2. export CROSS_COMPILE=/PATH/TO/TOOLCHAIN
 
-example export export CROSS_COMPILE=~/android/cm-11/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin/arm-eabi-
+example: export CROSS_COMPILE=~/android/cm-11/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin/arm-eabi-
 
 # Run as one command or it won't work
 2. $TARGET_PRODUCT=jrdsh77_cu_jb MTK_ROOT_CUSTOM=../mediatek/custom/  make 
