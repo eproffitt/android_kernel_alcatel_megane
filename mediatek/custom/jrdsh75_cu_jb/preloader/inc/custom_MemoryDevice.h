@@ -1,0 +1,13 @@
+
+#ifndef __CUSTOM_MEMORYDEVICE__
+#define __CUSTOM_MEMORYDEVICE__
+
+
+
+#define BOARD_ID                MT6575_EVB
+
+#define CS_PART_NUMBER[0]       H9TP32A4GDBCPR_KGM
+#define CS_PART_NUMBER[1]       H9TP32A4GDMCPR_KDM
+#define CS_PART_NUMBER[2]       MT29PZZZ4D4WKETF_18_W_6E4
+
+#endif /* __CUSTOM_MEMORYDEVICE__ */

@@ -1,0 +1,13 @@
+on init
+    mkdir /fat 0700 root root
+    rmdir /cache
+    mkdir /.cache 0770 system cache
+on fs
+    mount yaffs2 mtd@fat /fat nosuid nodev
+    mount yaffs2 mtd@cache /.cache nosuid nodev
+    mkdir /data/cache 0770 system cache
+    symlink /data/cache /cache
+on post-fs
+    exec /system/bin/vdc fatcreation
+    chown system cache /.cache
+    chmod 0770 /.cache
