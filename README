@@ -1,8 +1,13 @@
-export PATH=~/Your_Toolchain_PATH/
-for example /alps/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.6/bin
-Build Command:
 kernel
 ======
-1. $cd kernel directory
+1. $cd kernel
+
+2. export CROSS_COMPILE=/PATH/TO/TOOLCHAIN
+
+example export export CROSS_COMPILE=~/android/cm-11/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin/arm-eabi-
+
+# Run as one command or it won't work
 2. $TARGET_PRODUCT=jrdsh77_cu_jb MTK_ROOT_CUSTOM=../mediatek/custom/  make 
 
+# To clean
+2. $TARGET_PRODUCT=jrdsh77_cu_jb MTK_ROOT_CUSTOM=../mediatek/custom/  make clean
