@@ -10,4 +10,5 @@ example: export CROSS_COMPILE=~/android/cm-11/prebuilts/gcc/linux-x86/arm/arm-ea
 2. $TARGET_PRODUCT=jrdsh77_cu_jb MTK_ROOT_CUSTOM=../mediatek/custom/  make 
 
 # To clean
-2. $TARGET_PRODUCT=jrdsh77_cu_jb MTK_ROOT_CUSTOM=../mediatek/custom/  make mrproper
+2. $TARGET_PRODUCT=jrdsh77_cu_jb MTK_ROOT_CUSTOM=../mediatek/custom/  make mrproper && rm -rf ../mediatek/custom/out/
+
